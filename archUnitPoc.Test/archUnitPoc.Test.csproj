@@ -19,4 +19,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\archUnitPoc.Domain\archUnitPoc.Domain.csproj" />
+    <ProjectReference Include="..\archUnitPoc.Repository\archUnitPoc.Repository.csproj" />
+    <ProjectReference Include="..\archUnitPoc.UI\archUnitPoc.UI.csproj" />
+  </ItemGroup>
+
 </Project>

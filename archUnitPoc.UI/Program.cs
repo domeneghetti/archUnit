@@ -1,4 +1,9 @@
 ﻿using System;
+using archUnitPoc.Domain.Service;
+using archUnitPoc.Interfaces.Repository;
+using archUnitPoc.Interfaces.Service;
+using archUnitPoc.Repository;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace archUnitPoc.UI
 {
@@ -6,7 +11,15 @@ namespace archUnitPoc.UI
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var serviceProvider = new ServiceCollection()
+                .AddScoped<IPoc, Poc>()
+                .AddScoped<IApplicationService, ApplicationService>()
+                .AddScoped<IApplicationRepository, ApplicationRepository>()
+                .BuildServiceProvider();
+
+
+            var poc = serviceProvider.GetService<IPoc>();
+            poc.Process();
         }
     }
 }

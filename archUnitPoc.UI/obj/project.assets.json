@@ -1,11 +1,115 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "Microsoft.Extensions.DependencyInjection/5.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "compile": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll": {}
+        }
+      },
+      "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+        }
+      },
+      "archUnitPoc.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/archUnitPoc.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/archUnitPoc.Domain.dll": {}
+        }
+      },
+      "archUnitPoc.Repository/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "archUnitPoc.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/archUnitPoc.Repository.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/archUnitPoc.Repository.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Microsoft.Extensions.DependencyInjection/5.0.2": {
+      "sha512": "xzFW00AZEvOXM1OX+0+AYH5op/Hf3u//e6wszBd/rK72sypD+jx5CtsHxM4BVuFBEs8SajfO4QzSJtrQaHDr4A==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection/5.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/net5.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.xml",
+        "microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Microsoft.Extensions.DependencyInjection.Abstractions/5.0.0": {
+      "sha512": "ORj7Zh81gC69TyvmcUm9tSzytcy8AVousi+IVRAI8nLieQjOFryRusSFh7+aLk16FN9pQNqJAiMd7BTKINK0kA==",
+      "type": "package",
+      "path": "microsoft.extensions.dependencyinjection.abstractions/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
+        "microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "archUnitPoc.Domain/1.0.0": {
+      "type": "project",
+      "path": "../archUnitPoc.Domain/archUnitPoc.Domain.csproj",
+      "msbuildProject": "../archUnitPoc.Domain/archUnitPoc.Domain.csproj"
+    },
+    "archUnitPoc.Repository/1.0.0": {
+      "type": "project",
+      "path": "../archUnitPoc.Repository/archUnitPoc.Repository.csproj",
+      "msbuildProject": "../archUnitPoc.Repository/archUnitPoc.Repository.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "Microsoft.Extensions.DependencyInjection >= 5.0.2",
+      "archUnitPoc.Domain >= 1.0.0",
+      "archUnitPoc.Repository >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/f.domeneghetti@sp01.local/.nuget/packages/": {}
@@ -31,7 +135,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Domain/archUnitPoc.Domain.csproj": {
+              "projectPath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Domain/archUnitPoc.Domain.csproj"
+            },
+            "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Repository/archUnitPoc.Repository.csproj": {
+              "projectPath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Repository/archUnitPoc.Repository.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -43,6 +154,12 @@
     "frameworks": {
       "net5.0": {
         "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": {
+            "target": "Package",
+            "version": "[5.0.2, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

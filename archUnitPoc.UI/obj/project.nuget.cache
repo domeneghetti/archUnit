@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ioeyeHGTSoyi0BX/23N04EdkWYAq7csaA+ILjsZG5A6hjODGtdOcyyHlciAON7Np3fAX8t7UKpWs4eSXsJdTBw==",
+  "dgSpecHash": "vxWhI5sHxettEowkfpeiRS/mhDTHBliUvI9BDFglxcP1wYYS/K59Z1M6jjOrXEYhRSYYsRA9qH4cm+WI5B4yqA==",
   "success": true,
   "projectFilePath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.UI/archUnitPoc.UI.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/f.domeneghetti@sp01.local/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.2/microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "/home/f.domeneghetti@sp01.local/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

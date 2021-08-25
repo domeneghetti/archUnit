@@ -1,6 +1,6 @@
 # archUnit
 This project was created to validate an archUnit lib, some codes has archtecture problems.
-I expected create guarantees on solution architecture be implemented and respected all the project and fixes
+I expecte create guarantees on solution architecture to be implemented and respected in all the project and fixes
 
 For create this project I used the commands below:
 ```

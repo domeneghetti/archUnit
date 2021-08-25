@@ -1,8 +1,8 @@
 # archUnit
-This project was created to validate an archUnit lib.
+This project was created to validate an archUnit lib, some codes has archtecture problems.
 I expected create guarantees on solution architecture be implemented and respected all the project and fixes
 
-For create this project I used the commands bellow:
+For create this project I used the commands below:
 ```
 # create solution
 dotnet new sln --name archUnitPoc.sln 

@@ -31,9 +31,9 @@ dotnet add archUnitPoc.UI/archUnitPoc.UI.csproj reference archUnitPoc.Repository
  # archUnitPoc.UI
  dotnet add package Microsoft.Extensions.DependencyInjection
 
-# archUnitPoc.Test
-I tried install ArchUnitNET.xUnit using documentation I had two problems:
- - The package name changes, I find it with name: TngTech.ArchUnitNET.xUnit 
- - The package installed by cli on linux environment broked build, it was possible install by Nuget Manager on Windows environment
+ # archUnitPoc.Test
+ I tried install ArchUnitNET.xUnit using documentation I had two problems:
+  - The package name changed, I finded it with name: TngTech.ArchUnitNET.xUnit 
+  - The package installed by cli on linux environment broke build, it was possible install by Nuget Manager on Windows environment
 ```
 

@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vxWhI5sHxettEowkfpeiRS/mhDTHBliUvI9BDFglxcP1wYYS/K59Z1M6jjOrXEYhRSYYsRA9qH4cm+WI5B4yqA==",
+  "dgSpecHash": "kCJ35vt1xW/BonAGI9ihcCsrJXgOJg251u0PeakBvp1Rds7JjZZZMp4zaVTtrmiQE3fNL1RLE6DnN0+6ylPCQw==",
   "success": true,
-  "projectFilePath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.UI/archUnitPoc.UI.csproj",
+  "projectFilePath": "C:\\desenv\\archUnit\\archUnitPoc.UI\\archUnitPoc.UI.csproj",
   "expectedPackageFiles": [
-    "/home/f.domeneghetti@sp01.local/.nuget/packages/microsoft.extensions.dependencyinjection/5.0.2/microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
-    "/home/f.domeneghetti@sp01.local/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/5.0.0/microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
+    "C:\\Users\\fernando\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.2\\microsoft.extensions.dependencyinjection.5.0.2.nupkg.sha512",
+    "C:\\Users\\fernando\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

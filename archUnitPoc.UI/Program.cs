@@ -1,7 +1,7 @@
 ﻿using System;
 using archUnitPoc.Domain.Service;
-using archUnitPoc.Interfaces.Repository;
-using archUnitPoc.Interfaces.Service;
+using archUnitPoc.Domain.Interfaces.Repository;
+using archUnitPoc.Domain.Interfaces.Service;
 using archUnitPoc.Repository;
 using Microsoft.Extensions.DependencyInjection;
 

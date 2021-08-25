@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using archUnitPoc.Domain.Model;
 
-namespace archUnitPoc.Interfaces.Service
+namespace archUnitPoc.Domain.Interfaces.Service
 {
     public interface IApplicationService
     {

@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using archUnitPoc.Domain.Model;
-using archUnitPoc.Interfaces.Repository;
-using archUnitPoc.Interfaces.Service;
+using archUnitPoc.Domain.Interfaces.Repository;
+using archUnitPoc.Domain.Interfaces.Service;
 
 namespace archUnitPoc.Domain.Service
 {

@@ -1,4 +1,5 @@
-using archUnitPoc.Interfaces.Service;
+using archUnitPoc.Domain.Interfaces.Service;
+using archUnitPoc.Repository;
 
 public class Poc : IPoc
  {
@@ -11,7 +12,7 @@ public class Poc : IPoc
 
      public void Process() 
      {
-        var repository = new archUnitPoc.Repository.ApplicationRepository();
+        var repository = new ApplicationRepository();
         var applicationData = repository.GetAll();
 
         

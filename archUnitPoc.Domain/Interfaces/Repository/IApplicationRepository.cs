@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using archUnitPoc.Domain.Model;
 
-namespace archUnitPoc.Interfaces.Repository
+namespace archUnitPoc.Domain.Interfaces.Repository
 {
     public interface IApplicationRepository
     {

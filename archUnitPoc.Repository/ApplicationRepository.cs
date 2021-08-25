@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using archUnitPoc.Domain.Model;
-using archUnitPoc.Interfaces.Repository;
+using archUnitPoc.Domain.Interfaces.Repository;
 
 namespace archUnitPoc.Repository
 {

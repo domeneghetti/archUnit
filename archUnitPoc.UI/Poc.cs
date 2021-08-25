@@ -16,9 +16,6 @@ public class Poc : IPoc
         // Second Problem: I don't want to UI Layer has access to Repository Layer
         var repository = new ApplicationRepository();
         var applicationData = repository.GetAll();
-        var repository = new ApplicationRepository();
-        var applicationData = repository.GetAll();
-
         
         foreach(var app in applicationData)
         {

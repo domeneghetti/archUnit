@@ -59,5 +59,19 @@ Observe on:
 - Line 22: Just text for solution
 - Line 23: Solve problem the archecture test will show, dont forgot remove line 2, 17 to 20 too
 
+Now, back to terminal and access the project archUnitPoc.Test and execute command 
+```
+dotnet test
+```
 
-...
+Looking for the problem:
+![](images/UnitTestFail.png)
+
+our archUnitPoc.Test.PocTest.ValidateDependeceRepositoryLayer fails!!
+Did you remember poc class line 18?
+
+- Second Problem: I don't want to UI Layer has access to Repository Layer
+
+So, with archUnit can we garantees it's will not be exits!
+
+Lets see the tests now and understand how it was created.

@@ -75,3 +75,10 @@ Did you remember poc class line 18?
 So, with archUnit can we garantees it's will not be exits!
 
 Lets see the tests now and understand how it was created.
+
+The first part:
+- Lines 1 to 11: References assemblies of ArchUnitNET, xUnit and projects of our solution
+- Line 18: Create a instance of Architecture loading our projects assemblies to using on validations
+- Lines 24 to 28: Creating object of projects to using on validations, its not the same thing of line 18, on line 18 we crated object of archUnitNet and loaded our assemblies, now we are create a object provider of our projects loaded on line 18
+
+![](images/UnitTestFail.png)

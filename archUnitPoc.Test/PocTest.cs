@@ -1,14 +1,14 @@
-using System;
 using Xunit;
 using ArchUnitNET.Domain;
 using ArchUnitNET.Loader;
 using ArchUnitNET.Fluent;
-
-using static ArchUnitNET.Fluent.ArchRuleDefinition;
 using archUnitPoc.Repository;
 using ArchUnitNET.xUnit;
 using archUnitPoc.Domain.Interfaces.Repository;
 using archUnitPoc.UI;
+
+
+using static ArchUnitNET.Fluent.ArchRuleDefinition;
 
 namespace archUnitPoc.Test
 {
@@ -58,16 +58,6 @@ namespace archUnitPoc.Test
             IArchRule rule = Classes()
                 .That().ResideInAssembly(typeof(ApplicationRepository).Assembly)
                 .Should().HaveNameEndingWith("Repository");
-
-            rule.Check(architecture);
-        }
-
-        [Fact]
-        public void ValidateRepositoryInstance()
-        {
-            IArchRule rule = Classes()
-                .That().ResideInAssembly(typeof(ApplicationRepository).Assembly)
-                .Should().NotResideInAssembly(typeof(Poc).Assembly);
 
             rule.Check(architecture);
         }

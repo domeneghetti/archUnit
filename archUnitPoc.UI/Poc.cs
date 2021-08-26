@@ -1,4 +1,3 @@
-using archUnitPoc.Domain.Interfaces.Repository;
 using archUnitPoc.Domain.Interfaces.Service;
 using archUnitPoc.Repository;
 
@@ -7,12 +6,10 @@ namespace archUnitPoc.UI
     public class Poc : IPoc
     {
         private readonly IApplicationService _service;
-        private readonly IApplicationRepository _repository;
 
-        public Poc(IApplicationService service, IApplicationRepository repository)
+        public Poc(IApplicationService service)
         {
             _service = service;
-            _repository = repository;
         }
 
         public void Process()
@@ -22,7 +19,8 @@ namespace archUnitPoc.UI
             var repository = new ApplicationRepository();
             var applicationData = repository.GetAll();
             
-            //var applicationData = _repository.GetAll();
+            // Solution
+            // var applicationData = _service.GetAll();
 
             foreach (var app in applicationData)
             {

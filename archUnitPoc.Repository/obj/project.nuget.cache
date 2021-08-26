@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8rbxSEaCbBOLduCHOnn0nE6E81J4XLnXNTuegcnr0TBx9suCLVzFfM3AAo1SGHuLxGAwz3zOs1nP8/GqDeVKNA==",
+  "dgSpecHash": "HEBn4YZzIQD/1+k4t8Gt8mRRVpuhHcpzzWDsOVeeFYcK8WxGvAfwbdtEfHRYlZ6vQ8388pTSv7rj4KwUTOqspg==",
   "success": true,
-  "projectFilePath": "C:\\desenv\\archUnit\\archUnitPoc.Repository\\archUnitPoc.Repository.csproj",
+  "projectFilePath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Repository/archUnitPoc.Repository.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

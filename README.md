@@ -53,16 +53,11 @@ Let's see the class Poc in archUnitPoc.UI -> Poc.cs
 ![Poc Class](images/PocClass.png)
 
 Observe on:
-
-Line 2: There is a reference to repository layer, but, I don't want to UI layer access my repository layer
-
-Line 17 and 18: Just explication the problems
-
-Line 19 and 20: Creating repository object and using it to get data
-
-Line 22: Just text for solution
-
-Line 23: Solve problem the archecture test will show, dont forgot remove line 2, 17 to 20 too
+- Line 2: There is a reference to repository layer, but, I don't want to UI layer access my repository layer
+- Line 17 and 18: Just explication the problems
+- Line 19 and 20: Creating repository object and using it to get data
+- Line 22: Just text for solution
+- Line 23: Solve problem the archecture test will show, dont forgot remove line 2, 17 to 20 too
 
 
 ...

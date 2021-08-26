@@ -44,10 +44,12 @@ Lets running the project, just check if it's ok
 - execute command dotnet run
 
 Do you'll see 3 logs, looks like this print:
+
 ![Result Test Project Running](images/runningProject.png)
 
 Ok... the project works! 
 Let's see the class Poc in archUnitPoc.UI -> Poc.cs
+
 ![Poc Class](images/PocClass.png)
 
 Observe on:

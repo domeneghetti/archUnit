@@ -36,10 +36,10 @@ dotnet add archUnitPoc.UI/archUnitPoc.UI.csproj reference archUnitPoc.Repository
   - The package name changed, I finded it with name: TngTech.ArchUnitNET.xUnit 
   - The package installed by cli on linux environment broke build, it was possible install by Nuget Manager on Windows environment
 ```
-After create a project, I just create a simple classes for validate architecture rules.
+After created a project, I just create a simple classes for validate architecture rules.
 
-Lets running the project, just check if it's ok
-- open terminal
+Lets running the project, just check it's ok
+- open your terminal
 - navigate to project archUnit.UI
 - execute command dotnet run
 
@@ -52,41 +52,41 @@ Let's see the class Poc in archUnitPoc.UI -> Poc.cs
 
 ![Poc Class](images/PocClass.png)
 
-Observe on:
+Look at:
 - Line 2: There is a reference to repository layer, but, I don't want to UI layer access my repository layer
 - Line 17 and 18: Just explication the problems
 - Line 19 and 20: Creating repository object and using it to get data
 - Line 22: Just text for solution
-- Line 23: Solve problem the archecture test will show, dont forgot remove line 2, 17 to 20 too
+- Line 23: Solved problem the archecture test will show, dont forgot remove line 2, 17 to 20 too
 
 Now, back to terminal and access the project archUnitPoc.Test and execute command 
 ```
 dotnet test
 ```
 
-Looking for the problem:
+Look at this problem:
 ![](images/UnitTestFail.png)
 
-our archUnitPoc.Test.PocTest.ValidateDependeceRepositoryLayer fails!!
-Did you remember poc class line 18?
+our archUnitPoc.Test.PocTest.ValidateDependeceRepositoryLayer failed!!
+Did you remember Poc class at line 18?
 
 - Second Problem: I don't want to UI Layer has access to Repository Layer
 
-So, with archUnit can we garantees it's will not be exits!
+So, with archUnit we can guarantee it!
 
 Lets see the tests now and understand how it was created.
 
 The first part:
 - Lines 1 to 11: References assemblies of ArchUnitNET, xUnit and projects of our solution
 
-- Line 18: Create a instance of Architecture loading our projects assemblies to using on validations
+- Line 18: Created a instance of Architecture loading our projects assemblies to using on validations
 
 - Lines 24 to 28: Creating object of projects to using on validations, its not the same thing of line 18, on line 18 we crated object of archUnitNet and loaded our assemblies, now we are create a object provider of our projects loaded on line 18
 
 ![](images/archUnit.Test-1.png)
 
 The second part we have our architecture tests:
-- Test ValidateDependeceRepositoryLayer: We are creating validation to our repository layer no be using o ui layer, the problem created on Poc class line 17 to 23
+- Test ValidateDependeceRepositoryLayer: We are creating validation to our repository layer no be using o ui layer, about the problem created on Poc class line 17 to 23
 
 - TestValidateRepositoryImplementInterface: We are creating validation to garantees our ApplicationRepository implements contracts using interface IApplicationRepository
 

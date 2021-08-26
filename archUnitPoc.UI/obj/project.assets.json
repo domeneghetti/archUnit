@@ -112,35 +112,44 @@
     ]
   },
   "packageFolders": {
-    "/home/f.domeneghetti@sp01.local/.nuget/packages/": {}
+    "C:\\Users\\fernando\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.UI/archUnitPoc.UI.csproj",
+      "projectUniqueName": "C:\\desenv\\archUnit\\archUnitPoc.UI\\archUnitPoc.UI.csproj",
       "projectName": "archUnitPoc.UI",
-      "projectPath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.UI/archUnitPoc.UI.csproj",
-      "packagesPath": "/home/f.domeneghetti@sp01.local/.nuget/packages/",
-      "outputPath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.UI/obj/",
+      "projectPath": "C:\\desenv\\archUnit\\archUnitPoc.UI\\archUnitPoc.UI.csproj",
+      "packagesPath": "C:\\Users\\fernando\\.nuget\\packages\\",
+      "outputPath": "C:\\desenv\\archUnit\\archUnitPoc.UI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/f.domeneghetti@sp01.local/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\fernando\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nugetserverdotnetcore.azurewebsites.net/nuget": {},
+        "http://platform.bematech.com.br/nuget/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Domain/archUnitPoc.Domain.csproj": {
-              "projectPath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Domain/archUnitPoc.Domain.csproj"
+            "C:\\desenv\\archUnit\\archUnitPoc.Domain\\archUnitPoc.Domain.csproj": {
+              "projectPath": "C:\\desenv\\archUnit\\archUnitPoc.Domain\\archUnitPoc.Domain.csproj"
             },
-            "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Repository/archUnitPoc.Repository.csproj": {
-              "projectPath": "/home/f.domeneghetti@sp01.local/desenv/archUnit/archUnitPoc.Repository/archUnitPoc.Repository.csproj"
+            "C:\\desenv\\archUnit\\archUnitPoc.Repository\\archUnitPoc.Repository.csproj": {
+              "projectPath": "C:\\desenv\\archUnit\\archUnitPoc.Repository\\archUnitPoc.Repository.csproj"
             }
           }
         }
@@ -175,7 +184,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.400/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

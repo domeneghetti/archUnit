@@ -82,3 +82,12 @@ The first part:
 - Lines 24 to 28: Creating object of projects to using on validations, its not the same thing of line 18, on line 18 we crated object of archUnitNet and loaded our assemblies, now we are create a object provider of our projects loaded on line 18
 
 ![](images/archUnit.Test-1.png)
+
+The second part we have our architecture tests:
+- Test ValidateDependeceRepositoryLayer: We are creating validation to our repository layer no be using o ui layer, the problem created on Poc class line 17 to 23
+
+- TestValidateRepositoryImplementInterface: We are creating validation to garantees our ApplicationRepository implements contracts using interface IApplicationRepository
+
+- Test ValidateRepositoryLayerClassName: We are creating validation to garantees all class on repository layer has end with "Repository" on name
+
+![](images/archUnit.Test-2.png)

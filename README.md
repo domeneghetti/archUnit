@@ -81,4 +81,4 @@ The first part:
 - Line 18: Create a instance of Architecture loading our projects assemblies to using on validations
 - Lines 24 to 28: Creating object of projects to using on validations, its not the same thing of line 18, on line 18 we crated object of archUnitNet and loaded our assemblies, now we are create a object provider of our projects loaded on line 18
 
-![](images/UnitTestFail.png)
+![](images/archUnitTest-1.png)

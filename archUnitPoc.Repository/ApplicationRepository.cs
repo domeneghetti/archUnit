@@ -24,7 +24,7 @@ namespace archUnitPoc.Repository
 
         public bool Save(Application model)
         {
-            Console.WriteLine($"Save current Model: {model.Name}");
+            Console.WriteLine($"Saving current Model: {model.Name}");
             return true;
         }
     }

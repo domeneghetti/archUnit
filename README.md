@@ -93,3 +93,9 @@ The second part we have our architecture tests:
 - Test ValidateRepositoryLayerClassName: We are creating validation to garantees all class on repository layer has end with "Repository" on name
 
 ![](images/archUnit.Test-2.png)
+
+
+After fixed the problems get on test ValidateDependeceRepositoryLayer and running tests againg all test works with success:
+
+![](images/solution.png)
+
